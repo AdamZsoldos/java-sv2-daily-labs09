@@ -5,15 +5,15 @@ import java.time.LocalTime;
 
 public class FrontOfStageTicket extends Ticket {
 
-    private final String dicountCode;
+    private final String discountCode;
 
-    public FrontOfStageTicket(String artistName, LocalDateTime showDateTime, int ticketPrice, String dicountCode) {
+    public FrontOfStageTicket(String artistName, LocalDateTime showDateTime, int ticketPrice, String discountCode) {
         super(artistName, showDateTime, ticketPrice);
-        this.dicountCode = dicountCode;
+        this.discountCode = discountCode;
     }
 
-    public String getDicountCode() {
-        return dicountCode;
+    public String getDiscountCode() {
+        return discountCode;
     }
 
     @Override
