@@ -11,7 +11,7 @@ public class StringLists {
         for (String word : words) {
             if (word.length() < minLength) {
                 minLength = word.length();
-                result = new ArrayList<>();
+                result.clear();
             }
             if (word.length() == minLength) {
                 result.add(word);
