@@ -11,8 +11,8 @@ class StringListsTest {
 
     @Test
     void testGetShortestWords() {
-        List<String> words = Arrays.asList("aaa", "aa", "bb", "cccc", "dd");
+        List<String> actual = new StringLists().getShortestWords(Arrays.asList("aaa", "aa", "bb", "cccc", "dd"));
         List<String> expected = Arrays.asList("aa", "bb", "dd");
-        assertEquals(expected, new StringLists().getShortestWords(words));
+        assertEquals(expected, actual);
     }
 }
